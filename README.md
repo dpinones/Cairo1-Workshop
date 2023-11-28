@@ -1,13 +1,23 @@
-![workshop3](https://github.com/rcatalan98/Cairo1-Workshop/assets/30808181/0ec40502-a6ae-4974-898b-a10758637b69)
-
 # Cairo1-Workshop
 Para resolver los ejercicios de este workshop deberán forkear este repositorio. 
 
-Presentación [aquí](https://docs.google.com/presentation/d/1LZ6cNouEqFT-Qg0nsYd8AwRD78Pv5jRN)
+Presentación [aquí](https://docs.google.com/presentation/d/1WtJ50Crzn2lCTa5sSPLdyzDgjMAdZMh0/edit?usp=sharing&ouid=115043156397432018408&rtpof=true&sd=true){:target="_blank"}
 
 ## Instalación de Cairo
-Para instalar Cairo en sus computadoras deben tener Linux, MacOS o WSL en Windows. Recomendamos utilizar el siguiente script realizado por un miembro de la comunidad.
-https://book.cairo-lang.org/ch01-01-installation.html#installation-1
+Esto instalara la última versión de Cairo. 
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://docs.swmansion.com/scarb/install.sh | sh
+```
+
+Verificar instalación
+```bash
+$ scarb --version
+scarb 2.3.1 (0c8def3aa 2023-10-31)
+cairo: 2.3.1 (https://crates.io/crates/cairo-lang-compiler/2.3.1)
+sierra: 1.3.0
+```
+[Cairo Book - Installation](https://book.cairo-lang.org/ch01-01-installation.html#installation-1){:target="_blank"}
+
 
 ## Orden de resolución de los ejercicios
 
