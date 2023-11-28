@@ -21,7 +21,7 @@ mod tests {
         arr.append(5);
         arr.append(7);
         arr.append(9);
-        let (min, max) = mini_max_sum(arr); 
+        let (min, max) = mini_max_sum(arr);
         assert(min == 16, 'min should be 16');
         assert(max == 24, 'max should be 24');
     }
@@ -35,7 +35,7 @@ mod tests {
         arr.append(3);
         arr.append(4);
         arr.append(5);
-        let (min, max) = mini_max_sum(arr); 
+        let (min, max) = mini_max_sum(arr);
         assert(min == 10, 'min should be 10');
         assert(max == 14, 'max should be 14');
     }
@@ -49,7 +49,7 @@ mod tests {
         arr.append(3);
         arr.append(2);
         arr.append(1);
-        let (min, max) = mini_max_sum(arr); 
+        let (min, max) = mini_max_sum(arr);
         assert(min == 10, 'min should be 10');
         assert(max == 14, 'max should be 14');
     }
@@ -63,7 +63,7 @@ mod tests {
         arr.append(0);
         arr.append(0);
         arr.append(0);
-        let (min, max) = mini_max_sum(arr); 
+        let (min, max) = mini_max_sum(arr);
         assert(min == 0, 'min should be 0');
         assert(max == 0, 'max should be 0');
     }

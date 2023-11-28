@@ -7,7 +7,7 @@ Presentación [aquí](https://docs.google.com/presentation/d/1LZ6cNouEqFT-Qg0nsY
 
 ## Instalación de Cairo
 Para instalar Cairo en sus computadoras deben tener Linux, MacOS o WSL en Windows. Recomendamos utilizar el siguiente script realizado por un miembro de la comunidad.
-https://cairo-book.github.io/ch01-01-installation.html
+https://book.cairo-lang.org/ch01-01-installation.html#installation-1
 
 ## Orden de resolución de los ejercicios
 
@@ -22,16 +22,16 @@ Comandos para los ejercicios:
 
 ```rust
 // Ejercicio 1
-cairo-test ./ejercicios/mini_max_sum.cairo
+scarb test -f mini_max_sum
 
 // Ejercicio 2
-cairo-test ./ejercicios/find_digits.cairo
+scarb test -f find_digits
 
 // Ejercicio 3
-cairo-test ./ejercicios/fruit_party.cairo
+scarb test -f fruit_party
 
 // Ejercicio 4
-cairo-test ./ejercicios/power_sum.cairo
+scarb test -f power_sum
 ```
 
 ***Objetivo que los test corran.***

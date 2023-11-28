@@ -1,0 +1,49 @@
+type u128 = u128 [storable: true, drop: true, dup: true, zero_sized: false];
+type Tuple<u128, u128> = Struct<ut@Tuple, u128, u128> [storable: true, drop: true, dup: true, zero_sized: false];
+type Array<u128> = Array<u128> [storable: true, drop: true, dup: false, zero_sized: false];
+type Felt252Dict<u32> = Felt252Dict<u32> [storable: true, drop: false, dup: false, zero_sized: false];
+type u32 = u32 [storable: true, drop: true, dup: true, zero_sized: false];
+type SegmentArena = SegmentArena [storable: true, drop: false, dup: false, zero_sized: false];
+type Array<ejercicios::fruit_party::Fruta> = Array<ejercicios::fruit_party::Fruta> [storable: true, drop: true, dup: false, zero_sized: false];
+type felt252 = felt252 [storable: true, drop: true, dup: true, zero_sized: false];
+type ejercicios::fruit_party::Fruta = Struct<ut@ejercicios::fruit_party::Fruta, felt252, u32> [storable: true, drop: true, dup: true, zero_sized: false];
+
+libfunc drop<u128> = drop<u128>;
+libfunc u128_const<9> = u128_const<9>;
+libfunc store_temp<u128> = store_temp<u128>;
+libfunc drop<Array<ejercicios::fruit_party::Fruta>> = drop<Array<ejercicios::fruit_party::Fruta>>;
+libfunc felt252_dict_new<u32> = felt252_dict_new<u32>;
+libfunc store_temp<SegmentArena> = store_temp<SegmentArena>;
+libfunc store_temp<Felt252Dict<u32>> = store_temp<Felt252Dict<u32>>;
+libfunc drop<Array<u128>> = drop<Array<u128>>;
+libfunc u128_const<1> = u128_const<1>;
+libfunc u128_const<2> = u128_const<2>;
+libfunc struct_construct<Tuple<u128, u128>> = struct_construct<Tuple<u128, u128>>;
+libfunc store_temp<Tuple<u128, u128>> = store_temp<Tuple<u128, u128>>;
+libfunc u128_const<0> = u128_const<0>;
+
+drop<u128>([0]) -> (); // 0
+u128_const<9>() -> ([1]); // 1
+store_temp<u128>([1]) -> ([2]); // 2
+return([2]); // 3
+drop<Array<ejercicios::fruit_party::Fruta>>([1]) -> (); // 4
+felt252_dict_new<u32>([0]) -> ([2], [3]); // 5
+store_temp<SegmentArena>([2]) -> ([4]); // 6
+store_temp<Felt252Dict<u32>>([3]) -> ([5]); // 7
+return([4], [5]); // 8
+drop<Array<u128>>([0]) -> (); // 9
+u128_const<1>() -> ([1]); // 10
+u128_const<2>() -> ([2]); // 11
+struct_construct<Tuple<u128, u128>>([1], [2]) -> ([3]); // 12
+store_temp<Tuple<u128, u128>>([3]) -> ([4]); // 13
+return([4]); // 14
+drop<u128>([0]) -> (); // 15
+drop<u128>([1]) -> (); // 16
+u128_const<0>() -> ([2]); // 17
+store_temp<u128>([2]) -> ([3]); // 18
+return([3]); // 19
+
+ejercicios::find_digits::find_digits@0([0]: u128) -> (u128);
+ejercicios::fruit_party::fruit_party@4([0]: SegmentArena, [1]: Array<ejercicios::fruit_party::Fruta>) -> (SegmentArena, Felt252Dict<u32>);
+ejercicios::mini_max_sum::mini_max_sum@9([0]: Array<u128>) -> (Tuple<u128, u128>);
+ejercicios::power_sum::power_sum@15([0]: u128, [1]: u128) -> (u128);

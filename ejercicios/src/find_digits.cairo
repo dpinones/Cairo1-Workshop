@@ -10,12 +10,12 @@ fn find_digits(n: u128) -> u128 {
 #[cfg(test)]
 mod tests {
     use super::find_digits;
-    
+
     #[test]
     #[available_gas(200000)]
     fn find_digits_happy_path() {
         assert(find_digits(24) == 2, 'error find_digits_happy_path');
-    } 
+    }
 
     #[test]
     #[available_gas(200000)]

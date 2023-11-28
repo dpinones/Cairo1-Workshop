@@ -1,7 +1,6 @@
 // Ejercicio 4 - the-power-sum ⭐
 // https://www.hackerrank.com/challenges/the-power-sum/problem
 
-
 fn power_sum(x: u128, n: u128) -> u128 {
     // TODO: Implementar el contenido de la funcion
     0
