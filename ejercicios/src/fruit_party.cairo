@@ -34,7 +34,16 @@ struct Fruta {
 /// Un diccionario donde la clave es el nombre de la fruta y el valor es la sumatoria de los precios.
 fn fruit_party(frutas: Array<Fruta>) -> Felt252Dict<u32> {
     let mut diccionario: Felt252Dict<u32> = Default::default();
-    // TODO: Implementar el contenido de la funcion
+    let mut idx = 0;
+    loop {
+        if idx == frutas.len() {
+            break;
+        }
+        let fruta = *frutas.at(idx);
+        let precio_anterior = diccionario.get(fruta.nombre);
+        diccionario.insert(fruta.nombre, precio_anterior + fruta.precio);
+        idx += 1;
+    };
     diccionario
 }
 
@@ -61,9 +70,9 @@ mod tests {
         expected.insert('naranja', 5);
 
         let mut actual = fruit_party(frutas);
-        assert(actual.get('manzana') == expected.get('manzana'), 'error find_digits_happy_path');
-        assert(actual.get('sandia') == expected.get('sandia'), 'error find_digits_happy_path');
-        assert(actual.get('naranja') == expected.get('naranja'), 'error find_digits_happy_path');
+        assert(actual.get('manzana') == expected.get('manzana'), 'error manzana');
+        assert(actual.get('sandia') == expected.get('sandia'), 'error sandia');
+        assert(actual.get('naranja') == expected.get('naranja'), 'error naranja');
     }
 
     #[test]
