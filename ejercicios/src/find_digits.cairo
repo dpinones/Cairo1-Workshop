@@ -2,8 +2,30 @@
 // https://www.hackerrank.com/challenges/find-digits/problem
 
 fn find_digits(n: u128) -> u128 {
-    // TODO: Implementar el contenido de la funcion
-    9
+    let mut n = n;
+    let mut count = 0;
+    
+    // Itera mientras el número no sea cero
+    loop {
+        // Obtiene el dígito actual
+        let digit = n % 10;
+
+        // Verifica si el dígito es distinto de cero y es divisor de n
+        if digit != 0 && n % digit == 0 {
+            count += 1;
+        }
+
+        // Divide el número por 10 para pasar al siguiente dígito
+        n /= 10;
+
+        // Rompe el bucle si el número se reduce a cero
+        if n == 0 {
+            break;
+        }
+    };
+
+    // Devuelve la cantidad de dígitos divisibles
+    count
 }
 
 // Correr los tests usando 'scarb test -f find_digits'
