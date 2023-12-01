@@ -1,7 +1,7 @@
 # Cairo1-Workshop
 Para resolver los ejercicios de este workshop deberán forkear este repositorio. 
 
-Presentación [aquí](https://docs.google.com/presentation/d/1WtJ50Crzn2lCTa5sSPLdyzDgjMAdZMh0/edit?usp=sharing&ouid=115043156397432018408&rtpof=true&sd=true){:target="_blank"}
+<a href="https://docs.google.com/presentation/d/1WtJ50Crzn2lCTa5sSPLdyzDgjMAdZMh0" target="_blank">Presentación aquí</a>
 
 ## Instalación de Cairo
 Esto instalara la última versión de Cairo. 
@@ -16,7 +16,8 @@ scarb 2.3.1 (0c8def3aa 2023-10-31)
 cairo: 2.3.1 (https://crates.io/crates/cairo-lang-compiler/2.3.1)
 sierra: 1.3.0
 ```
-[Cairo Book - Installation](https://book.cairo-lang.org/ch01-01-installation.html#installation-1){:target="_blank"}
+
+<a href="https://book.cairo-lang.org/ch01-01-installation.html#installation-1" target="_blank">Cairo Book - Installation</a>
 
 
 ## Orden de resolución de los ejercicios

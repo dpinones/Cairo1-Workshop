@@ -38,7 +38,7 @@ fn fruit_party(frutas: Array<Fruta>) -> Felt252Dict<u32> {
     diccionario
 }
 
-// Correr los tests usando 'cairo-test ./ejercicios/fruit_party.cairo'
+// Correr los tests usando 'scarb test -f fruit_party'
 #[cfg(test)]
 mod tests {
     use array::ArrayTrait;

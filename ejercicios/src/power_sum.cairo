@@ -6,7 +6,7 @@ fn power_sum(x: u128, n: u128) -> u128 {
     0
 }
 
-// Correr los test usando 'cairo-test ./ejercicios/power_sum.cairo'
+// Correr los test usando 'scarb test -f power_sum'
 #[cfg(test)]
 mod tests {
     use super::power_sum;

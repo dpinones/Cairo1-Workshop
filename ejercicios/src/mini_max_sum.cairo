@@ -6,7 +6,7 @@ fn mini_max_sum(arr: Array<u128>) -> (u128, u128) {
     (1, 2)
 }
 
-// Correr los test usando 'cairo-test ./ejercicios/mini_max_sum.cairo'
+// Correr los test usando 'scarb test -f mini_max_sum'
 #[cfg(test)]
 mod tests {
     use array::ArrayTrait;

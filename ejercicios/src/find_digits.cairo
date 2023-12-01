@@ -6,7 +6,7 @@ fn find_digits(n: u128) -> u128 {
     9
 }
 
-// Correr los tests usando 'cairo-test ./ejercicios/find_digits.cairo'
+// Correr los tests usando 'scarb test -f find_digits'
 #[cfg(test)]
 mod tests {
     use super::find_digits;
